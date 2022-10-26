@@ -876,6 +876,10 @@ ul.nav_box {
   .QA_frame_box .content05_box .qa_toggle input:checked ~ .a_box {
     margin-top: 5%; }
 
+  .QA_frame_box .content05_box {
+    padding-bottom: 10%;
+    margin-bottom: 6%; }
+
   #Top_btn {
     width: 36px;
     height: 36px; }
