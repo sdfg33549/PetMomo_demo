@@ -830,7 +830,9 @@ ul.nav_box {
   ul.nav_box li .dropdown_menu {
     padding: 0 3%;
     padding-top: 4%;
-    border-radius: 0 0 6px 6px; }
+    border-radius: 0 0 6px 6px;
+    max-width: 60%;
+    left: 17%; }
     ul.nav_box li .dropdown_menu li {
       margin: 0; }
 
@@ -871,10 +873,12 @@ ul.nav_box {
     width: 12%;
     height: auto;
     padding-bottom: 12%;
-    top: -5%; }
+    top: 0;
+    left: -6%;
+    transform: translateY(-22%); }
 
   .QA_frame_box .content05_box .qa_toggle input:checked ~ .a_box {
-    margin-top: 5%; }
+    margin: 7% 10%; }
 
   .QA_frame_box .content05_box {
     padding-bottom: 10%;
