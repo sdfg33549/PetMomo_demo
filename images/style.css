@@ -185,11 +185,12 @@ ul.nav_box {
     padding: 1%;
     margin-top: 6%;
     width: 100%;
-    position: relative; }
+    position: relative;
+    display: flex; }
     .content01_box .type_title_box .type_icon, .content02_box .type_title_box .type_icon, .content03_box .type_title_box .type_icon, .content04_box .type_title_box .type_icon, .content05_box .type_title_box .type_icon {
       position: absolute; }
     .content01_box .type_title_box .type_title, .content02_box .type_title_box .type_title, .content03_box .type_title_box .type_title, .content04_box .type_title_box .type_title, .content05_box .type_title_box .type_title {
-      display: inline-block;
+      display: flex;
       transform: translateX(10%);
       margin: 0;
       vertical-align: middle;
@@ -208,7 +209,7 @@ ul.nav_box {
     background-size: auto 100%;
     position: absolute;
     bottom: 0;
-    left: calc(-100% - 20px); }
+    left: calc(-86% - 20px); }
   .content01_box .type01_box .type_title_box, .content02_box .type01_box .type_title_box, .content03_box .type01_box .type_title_box, .content04_box .type01_box .type_title_box, .content05_box .type01_box .type_title_box {
     background: #6CA548;
     margin-top: 3%; }
@@ -267,7 +268,8 @@ ul.nav_box {
   .content01_box .product_box, .content02_box .product_box, .content03_box .product_box, .content04_box .product_box, .content05_box .product_box {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    align-items: flex-start; }
     .content01_box .product_box .product_pic, .content02_box .product_box .product_pic, .content03_box .product_box .product_pic, .content04_box .product_box .product_pic, .content05_box .product_box .product_pic {
       width: 53.15%; }
     .content01_box .product_box .text_box, .content02_box .product_box .text_box, .content03_box .product_box .text_box, .content04_box .product_box .text_box, .content05_box .product_box .text_box {
@@ -590,6 +592,15 @@ ul.nav_box {
   right: 0;
   z-index: 100; }
 
+#Top_btn:hover {
+  opacity: .75;
+  transition: opacity .2s ease-in-out 0s; }
+
+.rwd_br {
+  content: "";
+  /* Remove break */
+  display: none; }
+
 /* --Animation--------------------------------- */
 @keyframes navArrAni {
   from {
@@ -645,7 +656,8 @@ ul.nav_box {
     border-radius: 22px;
     margin-top: 16%; }
     .content01_box .product_box, .content02_box .product_box, .content03_box .product_box, .content04_box .product_box, .content05_box .product_box {
-      flex-direction: column; }
+      flex-direction: column;
+      align-items: center; }
       .content01_box .product_box .product_pic, .content02_box .product_box .product_pic, .content03_box .product_box .product_pic, .content04_box .product_box .product_pic, .content05_box .product_box .product_pic {
         width: 80%; }
       .content01_box .product_box .text_box, .content02_box .product_box .text_box, .content03_box .product_box .text_box, .content04_box .product_box .text_box, .content05_box .product_box .text_box {
@@ -753,6 +765,9 @@ ul.nav_box {
       opacity: 0;
       right: -66px; } } }
 @media screen and (max-width: 640px) {
+  .header_box .header_title {
+    top: 18vw; }
+
   .content01_box, .content02_box, .content03_box, .content04_box, .content05_box {
     border-radius: 18px; }
     .content01_box h2, .content02_box h2, .content03_box h2, .content04_box h2, .content05_box h2 {
@@ -905,6 +920,17 @@ ul.nav_box {
     to {
       opacity: 0;
       right: -24%; } } }
+@media screen and (max-width: 340px) {
+  .content01_box .type01_box .type_title_box, .content02_box .type01_box .type_title_box, .content03_box .type01_box .type_title_box, .content04_box .type01_box .type_title_box, .content05_box .type01_box .type_title_box {
+    margin-top: 0; }
+  .content01_box .product_box .text_box .intro li, .content02_box .product_box .text_box .intro li, .content03_box .product_box .text_box .intro li, .content04_box .product_box .text_box .intro li, .content05_box .product_box .text_box .intro li {
+    margin: 0; }
+  .content01_box .product_box .text_box .spec.detail, .content02_box .product_box .text_box .spec.detail, .content03_box .product_box .text_box .spec.detail, .content04_box .product_box .text_box .spec.detail, .content05_box .product_box .text_box .spec.detail {
+    visibility: none; }
+
+  .rwd_br {
+    content: none;
+    display: initial; } }
 .clearfix:after {
   clear: both;
   content: "";
